@@ -48,9 +48,9 @@
     },
     "types": {
       "type": "relation",
-      "relation": "oneToMany",
+      "relation": "manyToMany",
       "target": "api::type.type",
-      "mappedBy": "work"
+      "mappedBy": "works"
     },
     "Description": {
       "type": "richtext"

@@ -26,15 +26,15 @@
         "audios"
       ]
     },
-    "work": {
-      "type": "relation",
-      "relation": "manyToOne",
-      "target": "api::work.work",
-      "inversedBy": "types"
-    },
     "Order": {
       "type": "integer",
       "required": true
+    },
+    "works": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::work.work",
+      "inversedBy": "types"
     }
   }
 }
